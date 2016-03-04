@@ -1,0 +1,39 @@
+body, div {
+  margin: 0;
+}
+
+div.screen {
+}
+
+.background, .preload-overlay {
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.background .content {
+  background: rgba(255, 255, 255, 0.7);
+  min-height: 100%;
+  padding: 1em;
+}
+
+.preload-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.preload-overlay-image {
+  background-image: url("/assets/images/intro-lo.jpg");
+}
+
+.preload-overlay-colour {
+  background-color: rgba(255,255,255,0.7);
+}
+
+.container {
+  display: none;
+}
