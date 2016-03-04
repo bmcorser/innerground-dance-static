@@ -1,14 +1,20 @@
 body, div {
+  font-family: 'Lato', sans-serif;
   margin: 0;
 }
 
-div.screen {
+img.logo {
+  padding: 1em;
 }
 
 .background, .preload-overlay {
   background-position: 50% 50%;
   background-size: cover;
   min-height: 100%;
+}
+
+.intro {
+  height: 100%;
 }
 
 .background .content {
@@ -36,4 +42,15 @@ div.screen {
 
 .container {
   display: none;
+}
+
+.half {
+  width: 45%;
+  float: left;
+  text-align: justify;
+  margin: 1em;
+}
+
+.profile {
+  text-align: center;
 }
