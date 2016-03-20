@@ -3,6 +3,12 @@ body, div {
   margin: 0;
 }
 
+h1.main {
+  font-size: 5em;
+  text-align: center;
+}
+
+
 img.logo {
   padding: 1em;
 }
@@ -21,6 +27,8 @@ img.logo {
   background: rgba(255, 255, 255, 0.7);
   min-height: 100%;
   padding: 1em;
+  max-width: 40em;
+  margin: 0 auto;
 }
 
 .preload-overlay {
@@ -53,4 +61,12 @@ img.logo {
 
 .profile {
   text-align: center;
+}
+
+p.passage {
+  text-align: center;
+  font-style: italic;
+}
+
+div.piece {
 }

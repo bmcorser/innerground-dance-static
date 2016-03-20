@@ -12,6 +12,7 @@ define(
         preloadOverlay.remove();
       });
     };
+    run()
     return {
       run: run,
     };
