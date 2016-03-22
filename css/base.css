@@ -13,7 +13,7 @@ img.logo {
   padding: 1em;
 }
 
-.background, .preload-overlay {
+.background, .preload-overlay, .gallery .image {
   background-position: 50% 50%;
   background-size: cover;
   min-height: 100%;
@@ -29,6 +29,10 @@ img.logo {
   padding: 1em;
   max-width: 40em;
   margin: 0 auto;
+}
+
+p {
+  text-align: justify;
 }
 
 .preload-overlay {
@@ -69,4 +73,88 @@ p.passage {
 }
 
 div.piece {
+}
+
+div.gallery {
+  min-height: 100%;
+  position: relative;
+}
+
+div.gallery span.title {
+  padding: 0.5em;
+  font-size: 2em;
+  display: block;
+}
+
+div.gallery div.image {
+  display: none;
+}
+
+div.gallery div.image div.caption {
+  left: 50%;
+  display: block;
+  position: absolute;
+  width: 40em;
+  margin-left: -21em;
+  text-align: center;
+  bottom: 0%;
+  padding: 1em;
+  background: rgba(255,255,255,0.7);
+}
+
+div.gallery div.image div.caption .locator {
+  height: 1em;
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  position: absolute;
+  top: 0em;
+}
+
+div.gallery div.image.active {
+  display: block;
+  min-height: 100%;
+}
+
+div.gallery .button {
+  font-size: 3em;
+  padding: 0.2em;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+div.gallery .left.button {
+}
+
+div.gallery .right.button {
+  right: 0%;
+}
+
+.menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu > ul {
+  z-index: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* position: fixed; */
+} 
+
+.menu li {
+  display: block;
+  /* float: left; */
+  padding: 0.5em;
+}
+
+.menu li > ul {
+  display: none;
+}
+
+.menu li/*:hover*/ > ul {
+  display: block;
+  position: relative;
 }

@@ -14,9 +14,7 @@ define(
       };
     };
     var main = function main () {
-      _.map(document.querySelectorAll('div.background'), function (elem) {
-        queueBackgrounds(elem);
-      });
+      _.map(document.querySelectorAll('div.background'), queueBackgrounds);
     };
     return main;
   }
