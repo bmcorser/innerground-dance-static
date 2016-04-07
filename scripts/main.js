@@ -18,13 +18,18 @@ define(
     var createLinks = function createLinks () {
       var items = document.querySelectorAll('.menu li');
       _.map(items, function (elem) {
-        var frag = '#' + menuName(elem);
-        var textNode = elem.childNodes[0];
-        var anchor = document.createElement('a');
-        anchor.href = frag;
-        anchor.textContent = textNode.textContent.trim();
-        elem.insertBefore(anchor, textNode);
-        textNode.remove()
+        var id = menuName(elem);
+        if (document.getElementById(id)) {  // there’s something we can link to
+          var frag = '#' + id;
+          var textNode = elem.childNodes[0];
+          var anchor = document.createElement('a');
+          anchor.href = frag;
+          anchor.textContent = textNode.textContent.trim();
+          elem.insertBefore(anchor, textNode);
+          textNode.remove()
+        } else {
+          // debugger;
+        }
       });
     };
 

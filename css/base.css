@@ -130,6 +130,15 @@ div.gallery .right.button {
   right: 0%;
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: visible;
+  height: 2em;
+  background: white;
+}
+
 .menu ul {
   list-style: none;
   padding-left: 0;
@@ -141,20 +150,31 @@ div.gallery .right.button {
   margin: 0;
   padding: 0;
   width: 100%;
-  /* position: fixed; */
 } 
 
-.menu li {
+.menu > ul > li {
   display: block;
-  /* float: left; */
-  padding: 0.5em;
+  float: left;
+  padding: 0.3em;
+  width: 12%;
+  background: white;
 }
 
 .menu li > ul {
+  /*
   display: none;
+   */
 }
 
-.menu li/*:hover*/ > ul {
+.menu li:hover > ul {
   display: block;
   position: relative;
+}
+
+.menu li li {
+  float: none;
+}
+
+.menu ul > li > ul > li > ul {
+  float: right;
 }
