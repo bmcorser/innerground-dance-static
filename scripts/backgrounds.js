@@ -14,7 +14,11 @@ define(
       };
     };
     var main = function main () {
-      _.map(document.querySelectorAll('div.background'), queueBackgrounds);
+      _.map(document.querySelectorAll('div.background'), function (elem) {
+        if (elem.dataset.background) {
+          queueBackgrounds(elem);
+        }
+      });
     };
     return main;
   }
