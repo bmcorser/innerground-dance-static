@@ -43,7 +43,7 @@ define(
         preloadOverlay.remove();
       });
     };
-    // run()
+    run()
     return {
       run: run,
     };
