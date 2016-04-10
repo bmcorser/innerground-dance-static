@@ -141,7 +141,8 @@ div.gallery .right.button {
 
 .menu ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .menu > ul {
@@ -161,20 +162,31 @@ div.gallery .right.button {
 }
 
 .menu li > ul {
-  display: none;
+  margin-top: 1em;
+  width: 100%;
   /*
+  display: none;
    */
 }
 
 .menu li:hover > ul {
+  display: initial;
+  position: relative;
+}
+
+.menu li > ul > li > ul:hover {
   display: block;
   position: relative;
 }
 
-.menu li li {
-  float: none;
+.menu ul > li > ul > li {
+  position: relative;
 }
 
 .menu ul > li > ul > li > ul {
   float: right;
+  margin: 0;
+  position: absolute;
+  top: 0%;
+  left: 100%;
 }
