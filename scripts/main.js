@@ -39,11 +39,12 @@ define(
       createLinks();
       document.querySelector('.container').style.display = 'inline';
       var preloadOverlay = document.querySelector('.preload-overlay');
+      document.location.href = document.location.href;  // restore position
       Velocity(preloadOverlay, {opacity: 0}, {duration: 1000}).then(function () {
         preloadOverlay.remove();
       });
     };
-    run()
+    // run()
     return {
       run: run,
     };

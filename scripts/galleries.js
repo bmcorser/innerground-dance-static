@@ -82,13 +82,13 @@ define(
 
     Gallery.prototype.addLeftRightButtons = function addLeftRightButtons (galleryElem) {
       var leftButton = document.createElement('div');
-      leftButton.innerHTML = '◀';
+      leftButton.innerHTML = '<img src="https://github.com/Ranks/emojione/blob/master/assets/png_512x512/2b05.png?raw=true" />';
       leftButton.classList.add('left');
       leftButton.classList.add('button');
       leftButton.onclick = _.partial(this.left, this);;
 
       var rightButton = document.createElement('div');
-      rightButton.innerHTML = '►';
+      rightButton.innerHTML = '<img src="https://github.com/Ranks/emojione/blob/master/assets/png_512x512/27a1.png?raw=true" />';
       rightButton.classList.add('right');
       rightButton.classList.add('button');
       rightButton.onclick = _.partial(this.right, this);;

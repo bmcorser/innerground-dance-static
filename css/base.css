@@ -6,6 +6,8 @@ body, div {
 h1.main {
   font-size: 5em;
   text-align: center;
+  padding: 1em;
+  margin: 0;
 }
 
 
@@ -84,6 +86,7 @@ div.gallery span.title {
   padding: 2em 0.5em;
   font-size: 2em;
   display: block;
+  text-shadow: 1px 1px #fff;
 }
 
 div.gallery div.image {
@@ -121,6 +124,10 @@ div.gallery .button {
   position: absolute;
   top: 50%;
   cursor: pointer;
+}
+
+div.gallery .button img {
+  width: 1em;
 }
 
 div.gallery .left.button {
@@ -204,4 +211,18 @@ nav ul ul ul {
   position: absolute;
   left: 100%;
   top: 0;
+}
+
+table.schedule {
+}
+
+table.schedule tr {
+}
+
+table.schedule td {
+  padding: 0.4em 0.3em;
+}
+
+.profile p {
+  text-align: center;
 }
