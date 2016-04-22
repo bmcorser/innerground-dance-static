@@ -39,7 +39,12 @@ define(
       createLinks();
       document.querySelector('.container').style.display = 'inline';
       var preloadOverlay = document.querySelector('.preload-overlay');
-      document.location.href = document.location.href;  // restore position
+
+      // if we’re on a particular page, restore that position
+      if (document.location.href.indexOf('#') !== -1) {
+        document.location.href = document.location.href;
+      }
+
       Velocity(preloadOverlay, {opacity: 0}, {duration: 1000}).then(function () {
         preloadOverlay.remove();
       });
