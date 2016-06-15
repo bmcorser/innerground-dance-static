@@ -9,6 +9,10 @@ define(
         var imageHi = new Image();
         imageHi.src = elem.dataset.background.replace('-lo', '');
         imageHi.onload = function () {
+          if (imageHi.height > imageHi.width && elem.dataset.portrait) {
+            elem.style['background-size'] = 'contain';
+            elem.style['background-repeat'] = 'no-repeat';
+          }
           elem.style['background-image'] = 'url(' + imageHi.src + ')';
         };
       };
