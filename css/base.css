@@ -4,10 +4,17 @@ body, div {
 }
 
 h1.main {
-  font-size: 5em;
+  font-size: 4em;
   text-align: center;
   padding: 1em;
-  margin: 0;
+  margin: 0 -4em;
+  width: 16em;
+  color: #426C8F;
+  text-shadow: 1px 1px black;
+}
+
+p.right {
+  text-align: right;
 }
 
 
@@ -34,7 +41,7 @@ img.logo {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
 }
 
 .preload-overlay {
@@ -61,7 +68,7 @@ p {
 .half {
   width: 45%;
   float: left;
-  text-align: justify;
+  text-align: left;
   margin: 1em;
 }
 
