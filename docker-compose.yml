@@ -1,0 +1,15 @@
+version: '3'
+services:
+  publish:
+    build:
+      context: .
+    volumes:
+      - ./assets:/web/assets
+      - ./css:/web/css
+      - ./scripts:/web/scripts
+      - ./config.js:/web/config.js
+      - ./build.js:/web/build.js
+      - ./bower.json:/web/bower.json
+      - ./index.html:/web/index.html
+      - ./publish:/publish
+    command: ash publish
